@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi Planta Inteligente</title>
+    <!-- El CSS irá en una etiqueta <style> -->
+        <link rel="stylesheet" href="style.css">
+    <!-- El JS irá en una etiqueta <script> -->
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Monitor de Mi Planta 💦🌡️</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card">
+                <h2>Humedad Ambiente:</h2>
+                <p class="moisture-display">
+                    <span id="humidityValue">...</span>
+                    <span class="unit">%</span>
+                </p>
+            </div>
+            <div class="card">
+                <h2>Temperatura Ambiente:</h2>
+                <p class="moisture-display">
+                    <span id="temperatureValue">...</span>
+                    <span class="unit">°C</span>
+                </p>
+            </div>
+        </div>
+        <div id="overallStatus" class="status-indicator mt-6"></div>
+        <p class="text-sm text-slate-600 mt-2">Estado general de la planta basado en la humedad.</p>
+    </div>
+</body>
+</html>
